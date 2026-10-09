@@ -61,3 +61,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+def validate_stop_id(stop_id):
+    """Validate the bus stop ID."""
+    return isinstance(stop_id, str) and bool(stop_id.strip())
